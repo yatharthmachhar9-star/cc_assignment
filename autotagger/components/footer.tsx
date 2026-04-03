@@ -1,4 +1,4 @@
-import { Github, Twitter, Mail, Sparkles } from "lucide-react"
+import { GitBranch, MessageSquare, Mail, Sparkles } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -50,10 +50,10 @@ export default function Footer() {
             <h3 className="font-semibold mb-4 text-fuchsia-400">Connect</h3>
             <div className="flex space-x-4 mb-4">
               <a href="#" className="text-slate-300 hover:text-violet-400 transition-all duration-300 hover:scale-110">
-                <Github className="w-6 h-6" />
+                <GitBranch className="w-6 h-6" />
               </a>
               <a href="#" className="text-slate-300 hover:text-purple-400 transition-all duration-300 hover:scale-110">
-                <Twitter className="w-6 h-6" />
+                <MessageSquare className="w-6 h-6" />
               </a>
               <a href="#" className="text-slate-300 hover:text-fuchsia-400 transition-all duration-300 hover:scale-110">
                 <Mail className="w-6 h-6" />
