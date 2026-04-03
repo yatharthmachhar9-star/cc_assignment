@@ -10,8 +10,9 @@ app = Flask(__name__)
 # Enable CORS with additional options
 CORS(app, resources={r"/*": {"origins": "*", "supports_credentials": True}})
 
-UPLOAD_FOLDER = r"E:/Projects/autotagger_backend/uploads"
-RESULT_FOLDER = r"E:/Projects/autotagger_backend/runs/detect"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
+RESULT_FOLDER = os.path.join(BASE_DIR, "runs", "detect")
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)

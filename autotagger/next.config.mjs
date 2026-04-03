@@ -8,6 +8,11 @@ const nextConfig = {
         port: '5000',
         pathname: '/result/**',
       },
+      {
+        protocol: 'https',
+        hostname: '**.onrender.com',
+        pathname: '/result/**',
+      },
     ],
     unoptimized: true,
   },
